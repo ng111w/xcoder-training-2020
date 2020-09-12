@@ -1,0 +1,79 @@
+$primary-color: #27272727;
+$secondary-color: #ff652f;
+$tertiary-color: rgb(141, 124, 124);
+$main-color: #fff;
+$Helvetica-body: Helvetica Neue, Helvetica, Arial, san-serif;
+$font-weight: (
+    "small": 100,
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+);
+
+body { 
+    background: $main-color;
+    font-weight: map-get($font-weight, small);
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-weight: map-get($font-weight, small);
+    margin: 15px;
+}
+
+h2 {
+    font-weight: map-get($font-weight, medium);
+}
+
+.main-header {
+    padding: 15px;
+    background-color: $tertiary-color;
+}
+
+.footer {
+    padding: 15px;
+    background-color: $tertiary-color;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    h3 {
+        text-align: center;
+        font-weight: map-get($font-weight, medium);
+    }
+}
+
+section {
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-1, .div-2, .div-3 {
+    background-color: red;
+    display: inline-block;
+    width: 100px;
+    margin: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    margin: 0 20px 0 0;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    a:hover {
+        color: #1BA1E2;
+    }
+}
+

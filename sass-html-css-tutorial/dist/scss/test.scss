@@ -1,0 +1,15 @@
+@import 'main.scss';
+
+body {
+    font-family: $Helvetica-body;
+}
+
+.a-1, .b-2, .c-3, .d-4, .e-5 {
+    margin: 1px;
+    width: 100%;
+    background: grey;
+}
+
+section {
+    display: flex;
+}
